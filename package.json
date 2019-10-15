@@ -1,5 +1,5 @@
 {
-  "name": "vee-validate-laravel",
+  "name": "@saroshali4/vee-validate-laravel",
   "version": "1.1.0",
   "description": "Adds simple laravel form validation support to vee-validate",
   "main": "dist/vee-validate-laravel.js",
@@ -28,5 +28,13 @@
     "rollup-plugin-node-resolve": "^3.0.0",
     "uglify-js": "^3.3.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saroshali4/vee-validate-laravel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saroshali4/vee-validate-laravel/issues"
+  },
+  "homepage": "https://github.com/saroshali4/vee-validate-laravel#readme"
 }

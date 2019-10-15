@@ -9,7 +9,7 @@
 
 var veeValidateLaravel = {
     install: function install(Vue, options) {
-        Vue.prototype.$setLaravelValidationErrorsFromResponse = function(errorResponse) {
+        Vue.prototype.$setLaravelValidationErrorsFromResponse = function(errorResponse, scope = null) {
             var this$1 = this;
 
             // only allow this function to be run if the validator exists
@@ -32,7 +32,7 @@ var veeValidateLaravel = {
                 var field = errorFields[i];
 
                 var errorString = errorResponse.errors[field].join(', ');
-                this$1.$validator.errors.add({ field: field, msg: errorString });
+                this$1.$validator.errors.add({ field: field, msg: errorString, scope: scope });
             }
         };
 
